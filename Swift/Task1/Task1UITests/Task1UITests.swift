@@ -2,7 +2,7 @@
 //  Task1UITests.swift
 //  Task1UITests
 //
-//  Created by 安田誠 on 2021/06/04.
+//  Created by makotoyasuda on 2021/06/04.
 //
 
 import XCTest
