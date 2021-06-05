@@ -13,6 +13,7 @@
 		E9CD7CF5266937BC0004BD49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CD7CF4266937BC0004BD49 /* Preview Assets.xcassets */; };
 		E9CD7D00266937BD0004BD49 /* Task1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD7CFF266937BD0004BD49 /* Task1Tests.swift */; };
 		E9CD7D0B266937BD0004BD49 /* Task1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD7D0A266937BD0004BD49 /* Task1UITests.swift */; };
+		E9CD7D19266950200004BD49 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD7D18266950200004BD49 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		E9CD7D06266937BD0004BD49 /* Task1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Task1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CD7D0A266937BD0004BD49 /* Task1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task1UITests.swift; sourceTree = "<group>"; };
 		E9CD7D0C266937BD0004BD49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CD7D18266950200004BD49 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,8 @@
 		E9CD7CEC266937B90004BD49 /* Task1 */ = {
 			isa = PBXGroup;
 			children = (
+				E9CD7D1A2669502B0004BD49 /* View */,
 				E9CD7CED266937B90004BD49 /* Task1App.swift */,
-				E9CD7CEF266937B90004BD49 /* ContentView.swift */,
 				E9CD7CF1266937BC0004BD49 /* Assets.xcassets */,
 				E9CD7CF6266937BC0004BD49 /* Info.plist */,
 				E9CD7CF3266937BC0004BD49 /* Preview Content */,
@@ -128,6 +130,15 @@
 				E9CD7D0C266937BD0004BD49 /* Info.plist */,
 			);
 			path = Task1UITests;
+			sourceTree = "<group>";
+		};
+		E9CD7D1A2669502B0004BD49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9CD7D18266950200004BD49 /* HomeView.swift */,
+				E9CD7CEF266937B90004BD49 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				E9CD7CF0266937B90004BD49 /* ContentView.swift in Sources */,
 				E9CD7CEE266937B90004BD49 /* Task1App.swift in Sources */,
+				E9CD7D19266950200004BD49 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
