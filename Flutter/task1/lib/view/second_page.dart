@@ -8,7 +8,7 @@ class SecondPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ページ遷移後のライフサイクル確認'),
+        title: const Text('ページ遷移後のライフサイクル確認'),
       ),
       body: Container(
         height: double.infinity,
@@ -29,13 +29,13 @@ class SecondNotifierPage extends StatelessWidget {
           secondPageNotifier.initialize();
           return Scaffold(
             appBar: AppBar(
-              title: Text('providerを使用したライフサイクル'),
+              title: const Text('providerを使用したライフサイクル'),
             ),
             body: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text(
+                  const Text(
                     'Flutter LifeCycle Status',
                   ),
                   Text(
