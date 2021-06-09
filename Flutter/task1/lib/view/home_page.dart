@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task1/view/second_page.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  const MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -73,14 +73,14 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
+            const Text(
               'Flutter LifeCycle Status',
             ),
             Text(
               '${_state.toString()}',
             ),
             Text('Current size: $_lastSize'),
-            Text(
+            const Text(
               'You have pushed the button this many times:',
             ),
             Text(
@@ -88,24 +88,25 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
               style: Theme.of(context).textTheme.headline4,
             ),
             ElevatedButton(
-              child: Text('StatelessWidget + Navigator.push'),
+              child: const Text('StatelessWidget + Navigator.push'),
               onPressed: () {
                 //StatelessWidget
                 // スタック状態の時はAppLifecycleStateは動作する
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
+                  MaterialPageRoute<void>(
                     builder: (context) => SecondPage(),
                   ),
                 );
               },
             ),
             ElevatedButton(
-              child: Text('StatelessWidget + Navigator.pushAndRemoveUntil'),
+              child:
+                  const Text('StatelessWidget + Navigator.pushAndRemoveUntil'),
               onPressed: () {
                 //StatelessWidget
                 // 後ろのページを破棄すると、AppLifecycleStateは動作しない
-                Navigator.pushAndRemoveUntil(
+                Navigator.pushAndRemoveUntil<void>(
                     context,
                     MaterialPageRoute(
                       builder: (context) => SecondPage(),
@@ -114,10 +115,10 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
               },
             ),
             ElevatedButton(
-              child: Text('StatelessWidget + changeNotifier + provider'),
+              child: const Text('StatelessWidget + changeNotifier + provider'),
               onPressed: () {
                 //StatelessWidget + changeNotifier + provider
-                Navigator.pushAndRemoveUntil(
+                Navigator.pushAndRemoveUntil<void>(
                     context,
                     MaterialPageRoute(
                       builder: (context) => SecondNotifierPage(),
@@ -131,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
