@@ -104,10 +104,9 @@
 				E956781026724C7C003C9392 /* View */,
 				E95677E026724C37003C9392 /* AppDelegate.swift */,
 				E95677E226724C37003C9392 /* SceneDelegate.swift */,
-				E95677E426724C37003C9392 /* ViewController.swift */,
+				E95677EB26724C3A003C9392 /* LaunchScreen.storyboard */,
 				E95677E626724C37003C9392 /* Main.storyboard */,
 				E95677E926724C3A003C9392 /* Assets.xcassets */,
-				E95677EB26724C3A003C9392 /* LaunchScreen.storyboard */,
 				E95677EE26724C3A003C9392 /* Info.plist */,
 			);
 			path = Task1;
@@ -141,6 +140,7 @@
 		E956781126724C82003C9392 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E95677E426724C37003C9392 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
