@@ -29,10 +29,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
-
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
 
@@ -42,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.all(20),
           child: Column(
             children: [
               const SizedBox(height: 50),
@@ -53,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.red,
                   shape: BoxShape.circle,
                 ),
-                child:const Center(
+                child: const Center(
                   child: Text('circle'),
                 ),
               ),
@@ -64,9 +62,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: const BoxDecoration(
                   color: Colors.blue,
                   shape: BoxShape.rectangle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black26,
+                      spreadRadius: 1,
+                      blurRadius: 10,
+                      offset: Offset(10, 10),
+                    ),
+                  ],
                 ),
                 child: const Center(
-                    child: Text('rectangle'),
+                  child: Text('rectangle'),
                 ),
               ),
               const SizedBox(height: 50),
