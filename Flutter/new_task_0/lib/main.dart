@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(height: 50),
               Container(
                 width: width,
-                height: height * 0.3,
+                height: height * 0.2,
                 decoration: const BoxDecoration(
                   color: Colors.red,
                   shape: BoxShape.circle,
@@ -58,7 +58,33 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(height: 50),
               Container(
                 width: width,
-                height: height * 0.3,
+                height: height * 0.2,
+                clipBehavior: Clip.antiAlias,
+                decoration: const BoxDecoration(
+                  color: Colors.red,
+                  shape: BoxShape.circle,
+                ),
+                child: const Center(
+                  child: Text('circle'),
+                ),
+              ),
+              const SizedBox(height: 50),
+              Container(
+                width: width,
+                height: height * 0.2,
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                decoration: const BoxDecoration(
+                  color: Colors.red,
+                  shape: BoxShape.circle,
+                ),
+                child: const Center(
+                  child: Text('circle'),
+                ),
+              ),
+              const SizedBox(height: 50),
+              Container(
+                width: width,
+                height: height * 0.2,
                 decoration: const BoxDecoration(
                   color: Colors.blue,
                   shape: BoxShape.rectangle,
@@ -78,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(height: 50),
               Container(
                 width: width,
-                height: height * 0.3,
+                height: height * 0.2,
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.yellow),
                   borderRadius: BorderRadius.circular(20),
