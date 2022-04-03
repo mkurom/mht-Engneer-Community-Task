@@ -32,12 +32,59 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(8),
+          child: Column(
+            children: [
+              const SizedBox(height: 50),
+              Container(
+                width: width,
+                height: height * 0.3,
+                decoration: const BoxDecoration(
+                  color: Colors.red,
+                  shape: BoxShape.circle,
+                ),
+                child:const Center(
+                  child: Text('circle'),
+                ),
+              ),
+              const SizedBox(height: 50),
+              Container(
+                width: width,
+                height: height * 0.3,
+                decoration: const BoxDecoration(
+                  color: Colors.blue,
+                  shape: BoxShape.rectangle,
+                ),
+                child: const Center(
+                    child: Text('rectangle'),
+                ),
+              ),
+              const SizedBox(height: 50),
+              Container(
+                width: width,
+                height: height * 0.3,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.yellow),
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.yellow,
+                ),
+                child: const Center(
+                  child: Text('rectangle'),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
